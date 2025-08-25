@@ -9,3 +9,5 @@ test_get_books_for_children_add_two_books_with_one_genre_for_children - пров
 test_add_book_in_favorites_get_list_of_favorites_books_add_one_book_to_favorites - проверяем функции добавления и получения книг из списка избранных - добавляем одну книгу в избранный список, проверяем, что получим список избранных книг с этой книгой
 test_add_book_in_favorites_delete_book_from_favorites_add_one_book_to_favorites_and_delete_it - проверяем функцию добавления и удаления книг из списка избранных - добавляем одну книгу в избранный список, затем удаляем ее, проверяем, что получим пустой список
 test_add_book_in_favorites_add_two_similar_book_to_favorites_and_recieve_only_one - проверяем функцию добавления книг в список избранных - добавляем две одинаковые книги в список избранных, проверяем, что книга добавится в список только один раз
+test_get_books_genre_whith_no_book_in_dictionary - проверяем функцию получения словаря с книгами - по умолчанию должен вернуться пустой словарь
+test_get_book_genre_whith_no_book_in_dictionary - проверяем функцию получения книги по ее жанру - запрашиваем жанр книги, которой нет в словаре - получаем None

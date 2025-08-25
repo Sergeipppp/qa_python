@@ -80,3 +80,11 @@ class TestBooksCollector:
         collector7.add_book_in_favorites(self.book1name)
         collector7.add_book_in_favorites(self.book1name)
         assert collector7.get_list_of_favorites_books() == [self.book1name]
+
+    def test_get_books_genre_whith_no_book_in_dictionary(self):
+        collector8 = BooksCollector()
+        assert collector8.get_books_genre() == {}
+
+    def test_get_book_genre_whith_no_book_in_dictionary(self):
+        collector9 = BooksCollector()
+        assert collector9.get_book_genre('test') == None
